@@ -44,8 +44,9 @@ break;
     });
 
     let checkbox = document.querySelector("input[name=font_italic]");
-
+   // The Document method querySelector() returns the first Element within the document that matches the specified selector, or group of selectors.
      checkbox.addEventListener("change", function() {
+         //The addEventListener() method attaches an event handler to the specified element.
        if (this.checked) {
         document.getElementById("text").style.fontStyle = "italic";
         } else {
