@@ -7,8 +7,10 @@ let convert_y= Number (y) ;
 if(convert_x>convert_y){
     alert("Hello World")
     console.log("hello world");
+    document.write("hello world");
 }else{
     alert("GoodBye");
+    document.write("Goodbye");
 }
 }
 

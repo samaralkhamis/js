@@ -12,6 +12,7 @@ switch (operation) {
     case "+":
         
       alert("sum is"+( num1+num2));
+      document.write("sum is"+( num1+num2));
       break;
     case "-":
         let number=Number(num1);
@@ -19,17 +20,17 @@ switch (operation) {
 
       alert("the subtraction is"+ (number-number2) );
       console.log("the subtraction is"+ (number-number2));
-      console.log(typeof (num1));
-      console.log(num1);
-      console.log(num2);
+      document.write("the subtraction is"+ (number-number2))
       break;
     case "*":
       alert("The Multiplication is "+num1 * num2);
       console.log("The Multiplication is "+num1 * num2);
+      document.write("The Multiplication is "+num1 * num2);
       break;
     case "/":
       alert("The division is"+ num1/num2);
       console.log("The division is"+ num1/num2);
+      document.write("The division is"+ num1/num2);
       break;
       default:
       alert("please enter the operation");
