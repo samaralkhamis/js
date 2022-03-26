@@ -154,24 +154,138 @@ function sumArray1(a) {
 
 
 //ex14
-function removeFromArr(arr,x) {
-    for (let i = 0; i < arr.length; i++) {
-        if(arr1[i] == x){
-            return arr1.splice([i]); 
-        }}
-console.log(arr1);}
+   // For Loop
+let array1=[14,11,9,10,20,15];
+let element1=Math.floor(Math.random()* array1.length);
+ function removeFromArray (array1,element1){
+ for (i=0; i<array.length;i++ ){
+    if(array1[i] === element1){
+            array1.splice(i, 1);
+        }
+    }
+    return array1;
+}
 
-// function removeFromArr(a,n){
-//    return a.splice(n);
+    //while Loop
+let array=[14,11,9,10,20,15];
+let element=Math.floor(Math.random()* array.length);
+ function removeFromArray (array){
+ while(i<array.length){
+        if(array[i]===number){
+            array.splice(i, 1)
+        }
+        i++
+    }
+    return array;
+}
 
-// }
-console.log(array5);
-let j=removeFromArr(array5,9);
-    console.log(j);
-    console.log(array5);
 
 
+//ex15
+    //For Loop
+let arra=[14,11,9,10,20,15];
+let arra2=[];
+ function  oddArray (array){
+ for (i=0; i<array.length;i++ ){
+    if(array[i] % 2 == 0 ){
+     }
+    else{
+     arra2.push(array[i]);
+  }
+    }
+    return arra2;
+}
+
+    //while Loop
+let arr=[14,11,9,10,20,15];
+let arra1=[];
+ function oddArray (array){
+ while(i<array.length){
+        if(array[i] % 2 == 0){
+        }
+        else{
+     arra1.push(array[i]);
+  }
+i++;
+    }
+    return array;
+}
+
+    //ex16
+
+   // for loop
+let array3=[5,8,9,10,12,15];
+let sum1;
+function aveArray(array){
+    for (i=0; i<array.length; i++){
+   sum1 =sum1 + array[i];
+   }
+ return (sum1/(array.length));
+}
 
 
+// While loop
+let array4=[5,8,9,10,12,15];
+let sum2;
+function aveArray(array){
+    while (i<array.length){
+   sum2 =sum2 + array[i];
+ i++;
+   }
+ return (sum2/(array.length));
+}
 
 
+    //ex17
+ function shorterInArray(arr=[""]){
+ let short=arr[0];
+   
+// for loop
+for(let i=0;i<arr.length;i++){
+   if(arr[i].length<short.length)
+    short=arr[i];
+   }
+
+ // While loop
+  let i=0;
+   while(i!=arr.length){
+  if(arr[i].length<short.length)
+    short=arr[i];
+    i++;
+   }
+        return short;
+    }
+var strings= ["alex","mercer","madrasa","rashed2","emad","hala"];
+console.log(shorterInArray(strings));
+
+//ex18
+// for loop
+function repeatChar(string="",target=""){
+    let result=0;
+    
+    for(let i=0;i<string.length;i++){
+        if(string[i]==target)
+            result++;
+    }    return result;
+}
+var string= "alex mercer madrasa rashed2 emad hala";
+console.log(repeatChar(string,"a")) ; 
+   // While loop
+//   let i=0;
+//    while(i!=string.length){
+//     if(string[i]==target)
+//         result++;
+//     i++;}
+
+
+//ex19
+//for Loop
+function evenIndexOddLength(array){
+let newArray = [];
+    for (let i =0;i<array.length;i++){
+        if(array[i].length % 2 === 1 && i % 2 ===0){
+            newArray.push(array[i]);
+        }
+    }
+    return newArray;
+}
