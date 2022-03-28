@@ -21,6 +21,7 @@ break;
 }
     });
 
+
     
 document.getElementById("font_size").addEventListener("change", function() {
    let y = document.getElementById("font_size").value;
