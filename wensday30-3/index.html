@@ -5,6 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+    
+      button {   
+             background-color: palevioletred;   
+             width: 100%;  
+              color: blue;   
+              padding: 15px;   
+              margin: 10px 0px;   
+              border: none;   
+              cursor: pointer;   
+               }   
+       form {   
+              border: 10px solid pink;   
+              background-color: lightblue;
+              padding: 10px;
+          }   
+       input[type=text], input[type=password] ,input[type=date] , input[type=email]  {   
+              width: 70%;   
+              margin: 8px 0;  
+              padding: 5px 10px;   
+              display: inline-block;   
+              border: 5px solid palevioletred;   
+              box-sizing: border-box;   
+          }  
+       button:hover {   
+              opacity: 0.7;   
+          }   
+        .cancelbtn {   
+              width: auto;   
+              padding: 10px 18px;  
+              margin: 10px 5px;  
+          }   
+              
+           
+       .container {  
+              margin: 10px; 
+              padding: 25px;   
+             
+          }   
+      </style> 
 </head>
 <body>
     <div class="container">
@@ -20,28 +60,28 @@
                 <input type="text" name="lname" id="lname">
                 <br>
                 <br>
-                <label for="bdate">Birth date</label>
+                <label for="bdate">Birth Date</label>
                 <input type="date" name="bdate" id="bdate">
                 <span id="bdate-error"></span>
                 <br>
                 <br>
-                <label for="femail">Email</label>
+                <label for="femail">Your Email</label>
                 <input type="email" name="femail" id="femail">
                 <br>
                 <br>
-                <label for="semail">Confirm email</label>
+                <label for="semail">Conf Email</label>
                 <input type="email" name="semail" id="semail">
                 <br>
                 <br>
-                <label for="password">Password</label>
+                <label for="password">Your Pass</label>
                 <input type="password" name="password" id="password">
                 <br>
                 <br>
-                <label for="cpassword">Confirm password</label>
+                <label for="cpassword">Conf pass</label>
                 <input type="password" name="spassword" id="spassword">
                 <br>
                 <br>
-                <button type="submit"><a href="indexs.html" target="_blank" >SUBMIT</a></button>
+                <button class="cancelbtn"type="submit"><a href="indexs.html" target="_blank" >SUBMIT</a></button>
             </div>
         </form>
     </div>
