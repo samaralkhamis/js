@@ -1,0 +1,176 @@
+body {
+    background: #000; 
+    font-family: 'Georgia', serif;
+    color: #fa8072;
+    height: 100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .wrapper {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  canvas {
+    color: #fff;
+    border: #AEFF14 dashed 7px;
+    padding: 50px;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Georgia', serif;
+    font-weight: 100;
+     margin: 5px 0;
+  }
+  
+  h1 {
+    font-size: 4.0em;
+    font-family: 'Georgia', serif;
+  }
+  
+  h2 {
+    font-size: 1.6em;
+    font-family: 'Georgia', serif;
+    color: #fff;
+  }
+  
+  p {
+    font-size: 2.0em;
+    font-family: 'Georgia', serif;
+  }
+  
+  #alphabet {
+    margin: 15px auto;
+    padding: 0;
+    max-width: 900px;
+  }
+  #alphabet:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #alphabet li {
+    float: left;
+    margin: 0 10px 10px 0;
+    list-style: none;
+    width: 35px;
+    height: 30px;
+    padding-top: 10px;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border: solid 1px #fff;
+  }
+  #alphabet li:hover {
+    background: #c1d72e;
+    border: solid 1px #fff;
+    color: #fff;
+  }
+  
+  #my-word {
+    margin: 5;
+    display: block;
+    padding: 0;
+    display: block;
+    color: #AEFF14;
+  }
+  
+  #my-word li {
+    position: relative;
+    list-style: none;
+    margin: 0;
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 2.0em;
+  }
+  
+  .active {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    cursor: default;
+  }
+  .active:hover {
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+  }
+  
+  #clue {
+    font-size: 2.0em;
+    text-align: center;
+    display: block;
+    color: #fa8072;
+    font-family: 'Georgia', serif;
+    font-style: italic;   
+  }
+  #categoryName {
+  font-size: 3.0em;
+  font-family: 'Georgia', serif;
+  }
+  
+  #mylives {
+    font-size: 2.0em;
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    font-style: italic; 
+  }
+  
+  button {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -khtml-border-radius: 5px;
+    background: #fa8072;
+    color: #000;
+    border: solid 1px #fff;
+    font-family: 'Georgia', serif;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 18px 10px;
+    width: 180px;
+    margin: 10px;
+    outline: none;
+  }
+  button:hover {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: #c1d72e;
+    border: solid 1px #fff;
+    color: #fff;
+  }
+  
+  @media (max-width: 767px) {
+    #alphabet {
+      padding: 0 0 0 15px;
+    }
+  }
+  @media (max-width: 480px) {
+    #alphabet {
+      padding: 0 0 0 25px;
+    }
+  }
+  
